@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Homepage</title>
 </head>
-<body>
+<body style="background: url('teduBlur.png') no-repeat center center fixed; background-size: cover;">
+    
+
+
     <div class="homepage-container">
+        <h1 id="welcome-header">Meet your new friend, TEDU Assistant!</h1>
+        <h4 id="ready-header">Ready to get to know about your university? Let's experience TEDU together</h4>
         <div id="chatbot">
-            <h2>AI Chat Assistant</h2>
+            <h2>TEDU Assistant</h2>
             <div id="chat-display"></div>
             <form id="chat-form">
                 <input type="text" id="chat-input" placeholder="Type your message here..." required>
@@ -19,18 +24,17 @@
                 <a href="settings.html" class="settings-link">Go to Settings</a>
                 <a href="index.html" class="logout-link">Logout</a>
             </div>
-
-            
             <div id="temperature-selector">
                 <label for="temperature-slider">Creativity Level (Temperature):</label>
                 <input type="range" id="temperature-slider" min="0.0" max="2.0" step="0.1" value="0.7">
                 <span id="temperature-value">0.7</span>
             </div>
-            
         </div>
     </div>
+
     <div id="suggestions-popup" class="modal">
         <div class="modal-content">
+            <h2 id="suggestions-header">Suggestions are ready!</h2>
             <span class="close-button">&times;</span>
             <div id="suggestions-container"></div>
         </div>

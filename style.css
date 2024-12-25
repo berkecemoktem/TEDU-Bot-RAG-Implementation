@@ -1,15 +1,24 @@
-/* General Body Styles */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* Soft gradient background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Arial', sans-serif;
     height: 100vh;
-    color: #333;
+    background: url('tedu.jpg') no-repeat center center fixed; /* Image positioning */
+    background-size: cover; /* Ensure the image covers the entire area */
+    color: #333; /* Default text color for readability */
 }
+
+.homepage-container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: flex-start; /* Start from the top */
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 
 /* Container for Login/Signup */
 .container {
@@ -43,7 +52,7 @@ body {
 }
 
 .container input:focus {
-    border-color: #5cb85c; /* Green outline when focused */
+    border-color: #a5b7a5; /* Green outline when focused */
 }
 
 /* Submit Button */
@@ -53,7 +62,7 @@ body {
     margin: 20px 0;
     border: none;
     border-radius: 30px;
-    background-color: #5cb85c;
+    background-color: #1B98E0;
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -61,7 +70,7 @@ body {
 }
 
 .container button:hover {
-    background-color: #4cae4c; /* Darker green on hover */
+    background-color: #4c66ae; /* Darker green on hover */
 }
 
 /* Link Text (e.g., Login/Signup Links) */
@@ -73,13 +82,13 @@ body {
 
 .container p a {
     text-decoration: none;
-    color: #5cb85c;
+    color: #1B98E0;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .container p a:hover {
-    color: #4cae4c;
+    color: #4c66ae;
 }
 
 /* Responsive Design */
@@ -92,6 +101,76 @@ body {
         font-size: 1.8rem;
     }
 }
+
+/* Header container styles */
+.header-container {
+    margin-top: -50px;
+    text-align: center; /* Center-align the text */
+    margin: 20px 0; /* Add spacing around the container */
+}
+
+/* Individual <h2> styles */
+.header-container h2 {
+    margin: 10px 0; /* Add spacing between the <h2> tags */
+    font-size: 1.8rem; /* Adjust font size */
+    color: #ffffff; /* Ensure text is readable on the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add subtle text shadow */
+}
+
+#welcome-header {
+    font-size: 3rem; /* Large font size for emphasis */
+    font-weight: bold; /* Strong emphasis */
+    background: linear-gradient(to right, purple, #cb81c7); /* Vibrant gradient color */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Make the gradient visible */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 10px; /* Add spacing below the header */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: fadeIn 1.5s ease; /* Smooth fade-in effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Add ellipsis for overflow (optional) */
+}
+
+
+/* Ready Header Styling */
+#ready-header {
+    font-size: 1.8rem; /* Slightly larger than before for better visibility */
+    font-weight: 400; /* Regular weight for contrast */
+    color: black; /* Neutral gray for a softer look */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add spacing below */
+    line-height: 1.8; /* Improve readability */
+    font-style: italic; /* Add elegance */
+    letter-spacing: 1px; /* Subtle spacing for better legibility */
+    animation: slideInFromBottom 1.5s ease; /* Smooth sliding effect */
+}
+
+/* Keyframes for Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for Slide-In */
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 /* General Body Styles */
 body {
@@ -167,7 +246,7 @@ body {
     width: 100%;
     border: none;
     border-radius: 30px;
-    background-color: #5cb85c;
+    background-color: purple;
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -175,7 +254,7 @@ body {
 }
 
 #preferences-form button:hover {
-    background-color: #4cae4c; /* Darker green on hover */
+    background-color: rgb(191, 77, 185); /* Darker green on hover */
 }
 
 /* Back Link */
@@ -184,13 +263,13 @@ body {
     margin-top: 20px;
     font-size: 1rem;
     text-decoration: none;
-    color: #5cb85c;
+    color: purple;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 .back-link:hover {
-    color: #4cae4c;
+    color: rgb(191, 77, 185)
 }
 
 /* Responsive Design */
@@ -218,19 +297,19 @@ body {
     height: 100%;
 }
 
-/* Chatbot Section */
 #chatbot {
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    max-width: 800px; /* Increased size for a full chat interface */
+    max-width: 800px; /* Ensure consistent layout */
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden; /* Contain floating elements */
     padding: 20px;
     text-align: center;
 }
+
 
 /* Chatbot Header */
 #chatbot h2 {
@@ -241,17 +320,18 @@ body {
 }
 
 #chat-display {
-    flex: 1; /* Allows it to expand within the flex container */
-    overflow-y: auto; /* Enables scrolling */
+    flex: 1; /* Allows flexible expansion in its container */
+    overflow-y: auto; /* Enables vertical scrolling */
     border: 1px solid #e0e0e0;
     background: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    height: 400px; /* Ensure a fixed height */
+    height: 400px; /* Fixed height to contain messages */
     text-align: left;
     font-size: 1rem;
     line-height: 1.5;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall size */
 }
 
 /* Scrollbar Styles */
@@ -316,7 +396,7 @@ body {
     padding: 12px 20px;
     border: none;
     border-radius: 30px;
-    background-color: #5cb85c;
+    background-color: purple;
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -324,7 +404,7 @@ body {
 }
 
 #chat-form button:hover {
-    background-color: #4cae4c;
+    background-color: rgb(191, 77, 185);
 }
 
 /* Links Section */
@@ -338,14 +418,14 @@ body {
 .logout-link {
     font-size: 1rem;
     text-decoration: none;
-    color: #5cb85c;
+    color: purple;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 .settings-link:hover,
 .logout-link:hover {
-    color: #4cae4c;
+    color: rgb(191, 77, 185);
 }
 
 /* Scrollbar Styles */
@@ -390,7 +470,7 @@ body {
 
 /* Popup Container */
 .modal-content {
-    background-color: #fff;
+    background-color: #ffe0b2;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -403,6 +483,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+/* Modal Header */
+#suggestions-popup .modal-content h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* Close Button */
@@ -496,6 +585,23 @@ body {
     font-weight: bold;
     color: #5cb85c;
     margin-left: 5px;
+}
+
+/* Chat Display Background */
+#chat-display {
+    background-color: #f9f9f9; /* Default background */
+    color: #333;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Thinking Message Style */
+.message.llm.thinking {
+    background-color: #fff8e1; /* Light yellow for thinking messages */
+    color: #795548; /* Brown text */
+    font-style: italic;
 }
 
 

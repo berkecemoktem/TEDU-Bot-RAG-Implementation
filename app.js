@@ -56,36 +56,6 @@ document.getElementById("preferences-form")?.addEventListener("submit", function
     localStorage.setItem("preference", preference);
 });
 
-// Chatbot interaction
-/*document.getElementById("chat-form")?.addEventListener("submit", async function (e) {
-    e.preventDefault();
-    
-    const chatInput = document.getElementById("chat-input");
-    const chatDisplay = document.getElementById("chat-display");
-    
-    const userMessage = chatInput.value.trim();
-    if (!userMessage) return;
-
-    // Display user message
-    const userBubble = document.createElement("div");
-    userBubble.className = "message user";
-    userBubble.innerText = userMessage;
-    chatDisplay.appendChild(userBubble);
-
-    // Mock LLM Response (replace with API call)
-    const llmResponse = await getLLMResponse(userMessage);
-    const llmBubble = document.createElement("div");
-    llmBubble.className = "message llm";
-    llmBubble.innerText = llmResponse;
-    chatDisplay.appendChild(llmBubble);
-
-    // Scroll to the bottom
-    chatDisplay.scrollTop = chatDisplay.scrollHeight;
-
-    // Clear input
-    chatInput.value = "";
-});*/
-
 async function sendQuery(query) {
     try {
         const requestBody = {
@@ -113,20 +83,35 @@ async function sendQuery(query) {
         }
 
         const responseData = await response.json();
+        const chatDisplay = document.getElementById("chat-display");
 
-        // Handle based on intent
+        // Display intent and "thinking" message
+        let thinkingMessage = "";
         if (responseData.intent === "course_suggestion") {
-            showSuggestionsPopup(responseData.recommendations);
+            thinkingMessage = "Intent is analyzed: Course Suggestion. Suggestions are getting prepared...";
+            chatDisplay.style.backgroundColor = "#ffe0b2"; // Light orange
         } else if (responseData.intent === "tedu_assistant") {
-            addMessageToChat(responseData.response, "llm");
-        } else {
-            throw new Error("Unrecognized intent in response.");
+            thinkingMessage = "Intent is analyzed: TEDU Assistant. Response is being prepared...";
+            chatDisplay.style.backgroundColor = "#bbdefb"; // Light blue
         }
+
+        // Add thinking message
+        addMessageToChat(thinkingMessage, "llm thinking");
+
+        // Introduce a delay before handling the response
+        setTimeout(() => {
+            if (responseData.intent === "course_suggestion") {
+                showSuggestionsPopup(responseData.recommendations);
+            } else {
+                addMessageToChat(responseData.response, "llm");
+            }
+        }, 2000); // Delay of 2 seconds
     } catch (error) {
         console.error('Error in sendQuery:', error.message);
         addMessageToChat("Sorry, something went wrong. Please try again.", "llm error");
     }
 }
+
 
 
 function addMessageToChat(message, type = "user") {
