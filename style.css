@@ -1,0 +1,501 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* Soft gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container for Login/Signup */
+.container {
+    width: 90%;
+    max-width: 400px; /* Limits the width for better readability */
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+    padding: 30px;
+    text-align: center;
+}
+
+/* Header (e.g., Login/Signup Title) */
+.container h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.container input:focus {
+    border-color: #5cb85c; /* Green outline when focused */
+}
+
+/* Submit Button */
+.container button {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 30px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Link Text (e.g., Login/Signup Links) */
+.container p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.container p a {
+    text-decoration: none;
+    color: #5cb85c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container p a:hover {
+    color: #4cae4c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #eef2f3, #8e9eab); /* Soft gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Settings Page Container */
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Settings Card */
+.settings-card {
+    width: 90%;
+    max-width: 500px; /* Limits the width for better readability */
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for floating effect */
+    padding: 30px;
+    text-align: center;
+}
+
+/* Header for Settings */
+.settings-card h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+#preferences-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#preferences-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+#preference-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#preference-input:focus {
+    border-color: #5cb85c; /* Green outline when focused */
+}
+
+#preferences-form button {
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#preferences-form button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #5cb85c;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-link:hover {
+    color: #4cae4c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .settings-card {
+        padding: 20px;
+    }
+
+    .settings-card h2 {
+        font-size: 1.8rem;
+    }
+
+    #preferences-form button {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Chatbot Container */
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Chatbot Section */
+#chatbot {
+    width: 90%;
+    max-width: 800px; /* Increased size for a full chat interface */
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Chatbot Header */
+#chatbot h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#chat-display {
+    flex: 1; /* Allows it to expand within the flex container */
+    overflow-y: auto; /* Enables scrolling */
+    border: 1px solid #e0e0e0;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 400px; /* Ensure a fixed height */
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Scrollbar Styles */
+#chat-display::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-display::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+#chat-display::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+
+
+/* Chat Messages */
+#chat-display .message {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* User Message Style */
+#chat-display .user {
+    background: #d1e7ff; /* Light blue for user messages */
+    align-self: flex-end;
+    color: #004085;
+}
+
+/* Chatbot Message Style */
+#chat-display .llm {
+    background: #e2e3e5; /* Light gray for chatbot messages */
+    color: #383d41;
+}
+
+/* Chat Input Form */
+#chat-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#chat-input:focus {
+    border-color: #5cb85c;
+}
+
+#chat-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#chat-form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Links Section */
+.homepage-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.settings-link,
+.logout-link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #5cb85c;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.settings-link:hover,
+.logout-link:hover {
+    color: #4cae4c;
+}
+
+/* Scrollbar Styles */
+#chat-display::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-display::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+#chat-display::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #chatbot {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #chat-display {
+        height: 300px; /* Adjust chat area for smaller screens */
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Container */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set max width for the popup */
+    width: 90%;
+    text-align: center;
+    position: relative;
+    max-height: 80vh; /* Limit height to avoid overflowing the screen */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: none;
+    z-index: 10; /* Ensure it stays on top */
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: #d9534f; /* Change color on hover */
+}
+
+/* Suggestions Container (Grid Layout) */
+#suggestions-container {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 15px; /* Space between grid items */
+    justify-items: center; /* Center items horizontally */
+}
+
+/* Suggestion Card */
+.suggestion-card {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 10px; /* Add margin to create spacing between cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth interaction effect */
+}
+
+/* Hover Effect */
+.suggestion-card:hover {
+    transform: translateY(-5px); /* Slight upward lift on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Suggestion Card Title */
+.suggestion-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Suggestion Card Details */
+.suggestion-card p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Remove Button */
+.suggestion-card .remove-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #ff6b6b;
+    background: none;
+    border: none;
+    transition: color 0.2s ease; /* Smooth color change */
+}
+
+.suggestion-card .remove-button:hover {
+    color: #d9534f; /* Darker red on hover */
+}
+
+/* Temperature Selector Styles */
+#temperature-selector {
+    margin-top: 10%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#temperature-slider {
+    width: 80%;
+    margin: 10px 0;
+}
+
+#temperature-value {
+    font-weight: bold;
+    color: #5cb85c;
+    margin-left: 5px;
+}
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="homepage-container">
+        <div id="chatbot">
+            <h2>AI Chat Assistant</h2>
+            <div id="chat-display"></div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type your message here..." required>
+                <button type="submit">Send</button>
+            </form>
+            <div class="homepage-links">
+                <a href="settings.html" class="settings-link">Go to Settings</a>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+
+            
+            <div id="temperature-selector">
+                <label for="temperature-slider">Creativity Level (Temperature):</label>
+                <input type="range" id="temperature-slider" min="0.0" max="2.0" step="0.1" value="0.7">
+                <span id="temperature-value">0.7</span>
+            </div>
+            
+        </div>
+    </div>
+    <div id="suggestions-popup" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="suggestions-container"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
