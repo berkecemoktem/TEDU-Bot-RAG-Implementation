@@ -1,0 +1,227 @@
+[
+  {
+    "code": "CMPE 113",
+    "name": "Fundamentals of Programming I",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Parisa Akar, Elif Kurtaran Özbudak",
+    "description": "Introduction to programming, problem-solving, and algorithms using a high-level programming language.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 114",
+    "name": "Fundamentals of Programming II",
+    "department": "Department of Computer Engineering",
+    "credit": 6,
+    "lecturer": "Eren Ulu",
+    "description": "Continuation of programming fundamentals with an emphasis on object-oriented programming.",
+    "pre-requisite": "CMPE 113, test-course"
+  },
+  {
+    "code": "CMPE 201",
+    "name": "Discrete Structures of Mathematics",
+    "department": "Department of Computer Engineering",
+    "credit": 6,
+    "lecturer": "Niyazi Anıl Gezer, Anıl Özdemir, Bengisen Pekmen",
+    "description": "Introduction to mathematical logic, set theory, combinatorics, and graph theory for computer science.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 211",
+    "name": "Digital Systems",
+    "department": "Department of Computer Engineering",
+    "credit": 6,
+    "lecturer": "Eren Ulu",
+    "description": "Fundamentals of digital logic design, combinational circuits, and sequential circuits.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 223",
+    "name": "Data Structures and Algorithms I",
+    "department": "Department of Computer Engineering",
+    "credit": 6,
+    "lecturer": "Ulaş Güleç",
+    "description": "Introduction to data structures such as arrays, linked lists, stacks, and queues.",
+    "pre-requisite": "CMPE 114, test-course"
+  },
+  {
+    "code": "CMPE 224",
+    "name": "Data Structures and Algorithms II",
+    "department": "Department of Computer Engineering",
+    "credit": 6,
+    "lecturer": "Venera Adanova, Tolga Kurtuluş Çapın",
+    "description": "Advanced data structures and algorithms, including trees, graphs, and sorting algorithms.",
+    "pre-requisite": "CMPE 223, test-course"
+  },
+  {
+    "code": "CMPE 232",
+    "name": "Database Systems",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Ayşe Yasemin Seydim, Deniz Cantürk",
+    "description": "Fundamentals of database design, relational models, and SQL programming.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 316",
+    "name": "Game Programming",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Çağatay Ündeğer",
+    "description": "Introduction to game development principles, graphics, and physics programming.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 322",
+    "name": "Theory of Computation",
+    "department": "Department of Computer Engineering",
+    "credit": 6,
+    "lecturer": "Fırat Akba, Özlem Albayrak",
+    "description": "Study of formal languages, automata theory, and Turing machines.",
+    "pre-requisite": "CMPE 201, test-course"
+  },
+  {
+    "code": "CMPE 325",
+    "name": "Information Security and Cryptography",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Elif Kurtaran Özbudak",
+    "description": "Introduction to cryptographic principles and techniques for secure communication.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 343",
+    "name": "Object-Oriented Programming",
+    "department": "Department of Computer Engineering",
+    "credit": 6,
+    "lecturer": "Tolga Kurtuluş Çapın",
+    "description": "Study of object-oriented principles and design patterns in software development.",
+    "pre-requisite": "CMPE 114, test-course"
+  },
+  {
+    "code": "CMPE 350",
+    "name": "Software Engineering",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "İsmail Hakkı Toroslu",
+    "description": "Introduction to software development processes, requirements analysis, and testing.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 352",
+    "name": "Operating Systems",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Eren Ulu",
+    "description": "Concepts of operating systems including processes, threads, and memory management.",
+    "pre-requisite": "CMPE 224, test-course"
+  },
+  {
+    "code": "CMPE 353",
+    "name": "Computer Networks",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Fırat Akba",
+    "description": "Study of network architectures, protocols, and data communication techniques.",
+    "pre-requisite": "CMPE 352, test-course"
+  },
+  {
+    "code": "CMPE 362",
+    "name": "Artificial Intelligence",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Cemal Yılmaz",
+    "description": "Introduction to AI concepts, search algorithms, and basic machine learning techniques.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 363",
+    "name": "Machine Learning",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Güven Çatak",
+    "description": "Introduction to supervised, unsupervised, and reinforcement learning methods.",
+    "pre-requisite": "CMPE 362, test-course"
+  },
+  {
+    "code": "CMPE 372",
+    "name": "Human-Computer Interaction",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Seçkin Yılmaz",
+    "description": "Principles and methods of designing user-centered interfaces.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 383",
+    "name": "Introduction to Robotics",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Eren Ulu",
+    "description": "Fundamentals of robotics, sensors, and actuators.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 384",
+    "name": "Embedded Systems",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Hüseyin Karabulut",
+    "description": "Design and implementation of software for embedded hardware platforms.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 410",
+    "name": "Mobile Application Development",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Çağatay Ündeğer",
+    "description": "Development of mobile applications for Android and iOS platforms.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 420",
+    "name": "Parallel Computing",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Niyazi Anıl Gezer",
+    "description": "Study of parallel computing architectures and parallel programming models.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 425",
+    "name": "Cryptography",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Elif Kurtaran Özbudak",
+    "description": "Advanced study of cryptographic systems and security protocols.",
+    "pre-requisite": "CMPE 325, test-course"
+  },
+  {
+    "code": "CMPE 433",
+    "name": "Cloud Computing",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Venera Adanova",
+    "description": "Introduction to cloud computing concepts, architectures, and services.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 435",
+    "name": "Big Data Analytics",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "Deniz Cantürk",
+    "description": "Techniques for processing, analyzing, and visualizing large datasets.",
+    "pre-requisite": "test-course"
+  },
+  {
+    "code": "CMPE 450",
+    "name": "Software Project Management",
+    "department": "Department of Computer Engineering",
+    "credit": 5,
+    "lecturer": "İsmail Hakkı Toroslu",
+    "description": "Study of project management principles and practices in software development.",
+    "pre-requisite": "test-course"
+  }
+]

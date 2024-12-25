@@ -27,9 +27,9 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://127.0.0.1:5500"],  # Add the allowed origin
+        "origins": ["http://127.0.0.1:5500", "http://localhost:5500"],  # Allow frontend origin
         "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type", "Authorization"],
+        "allow_headers": ["Content-Type", "Authorization", "Origin"],
         "supports_credentials": True
     }
 })
@@ -324,15 +324,20 @@ def require_auth(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         auth_header = request.headers.get('Authorization')
+        logger.info(f"Authorization Header: {auth_header}")
         if not auth_header:
+            logger.error("No authorization header provided")
             return jsonify({"error": "No authorization header"}), 403
         try:
             # Extract token from "Bearer <token>"
             token = auth_header.split(" ")[1]
+            logger.info(f"Token extracted: {token}")
         except Exception as e:
+            logger.error(f"Invalid authorization header: {e}")
             return jsonify({"error": "Invalid authorization header"}), 403
         return f(*args, **kwargs)
     return decorated
+
 
 # Chat API endpoint
 @require_auth
