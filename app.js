@@ -1,6 +1,6 @@
 
 const API_URL = 'http://127.0.0.1:5000/api/chat';
-const GOOGLE_API_KEY = 'AIzaSyDtbAdzBiBgHxr_AUSZUfUD-x_cSZMikcw';
+const GOOGLE_API_KEY = 'your-key';
 
 const temperatureSlider = document.getElementById("temperature-slider");
 const temperatureValue = document.getElementById("temperature-value");
@@ -281,7 +281,7 @@ document.getElementById("chat-form")?.addEventListener("submit", async function 
         }
     } catch (error) {
         loadingBubble.className = "message llm error";
-        loadingBubble.innerText = "Sorry, something went wrong. Please try again.";
+        // loadingBubble.innerText = "Sorry, something went wrong. Please try again.";
     } finally {
         submitButton.disabled = false;
         chatDisplay.scrollTop = chatDisplay.scrollHeight;
@@ -303,4 +303,3 @@ document.addEventListener("keydown", function (event) {
 temperatureSlider.addEventListener("input", function () {
     temperatureValue.textContent = this.value;
 });
-
